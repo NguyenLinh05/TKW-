@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p class="demo"></p>
+
+<script>
+var x = 5;
+var y = 6;
+var z = x ** y;
+
+//alert('giá trị của z là:' + z);
+document.getElementsByClassName("demo")[0].innerHTML =
+"The value of z is: " + z;
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validateForm() {
+                var uname = document.getElementById("username").value;
+                if (uname == "") {
+                    alert("Tên đăng nhập phải nhập!");
+                    return false;
+                }else{
+                	alert("Hello" + uname);
+                    return false;
+                }
+                
+                return true;
+            }
+        </script>
+    </head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="username">Tên đăng nhập: </label><br/>
+        <input type="text" name="username" id="username"/><br/>
+        <input type="submit" value="Gửi dữ liệu"/>
+    </form>
+</body>
+</html>
+
+
+<input type="text" id="a">
+<script>
+function validateForm() {
+var a = document.getElementById("a").value;
+if ( a%2==0) {
+alert( a +" là số chẵn" );
+return true;
+}
+else {
+alert(a +" là số lẻ" );
+}
+return false;
+}
+</script>
+<input type="button" value="kiểm tra tính chẵn lẻ" onclick="validateForm();">
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#btn2").hide();
+                
+                $("#btn1").click(function() { $("#btn1").hide(); $("#btn2").show(); });
+                
+                $("#btn2").click(function() { $("#btn2").hide(); $("#btn1").show(); });
+            });
+        </script>
+    </head>
+<body>
+    <button id="btn1" style="background-color: blue; color: white; padding:10px;">Hiển thị nút bấm 2</button>
+    <button id="btn2" style="background-color: orange; color: white; padding: 10px;">Hiển thị nút bấm 1</button>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+	$("#userform").submit(function() {
+	let uname = $("#username").val();
+	if (uname == "") {
+		alert("Tên đăng nhập không được bỏ trống!");
+		return false;
+	}
+	return true;
+	});
+	});
+</script>
+
+<form id="userform">
+	<label for="username">Tên đăng nhập: </label><br/>
+	<input type="text" name="username" id="username"/><br/>
+	<input type="submit" value="Gửi"/>
+</form>
+
+
+
+

@@ -1,0 +1,259 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #FAFAFA;
+	font-family: 'Open Sans' ,Tahoma;
+	font-size: 14px;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*#nav */
+#nav .logo a{
+	font-size: 4em;
+	color: #26C6DA;
+	display: block;
+	height: 77px;
+	font-family: 'Cursive', Garamond;
+	padding: 0 0 0 1.8em;
+	font-weight: bold;
+}
+#nav{
+	background-color:#E0F7FA;
+	position: relative;
+}
+#nav:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#nav a{
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+}
+.main_nav{
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	padding: 10px;
+}
+#nav input[type="text"]{
+	width: 450px;
+	height: 30px;
+	margin-left: 100px;
+	background-color: #E0F7FA;
+}
+#nav .icon{
+	padding: 2px 20px;
+	background-color: #29B6F6;
+	float: right;
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+
+}
+#nav .icon img{
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+#nav a input[type="button"]{
+	margin: 10px;
+	padding: 4px 22px;
+	width: 128px;
+	height: 35px;
+	background-color: #29B6F6;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+}
+#nav a input[type="button"]:hover{
+	color: #F4511E;
+	font-weight: bold;
+}
+
+/* #header */
+#header{
+	background-color: #03A9F4;
+}
+#menu ul{
+	padding: 10px;
+	display: flex;
+}
+#menu ul li{
+	margin-left: 55px;
+	position: relative;
+}
+#menu ul li a{
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0px;
+}
+
+#menu ul li ul{
+	display: none;
+}
+#menu ul li a:hover{
+	color: #F4511E;
+
+}
+#menu ul li:hover ul{
+	width: 100%;
+	display: block;
+	background-color: #4FC3F7; 
+	left: 30px;
+	top: 19px;
+	font-weight: none;
+}
+#menu ul li:hover ul li{
+	margin: 2px;
+}
+/*-menu con-*/
+#menu li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+#menu li>ul li{
+    
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: none;
+}
+#menu li>ul li:first-child a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+#menu li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#menu li>ul li:last-child a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*khi hover thì hiện menu con*/
+#menu  li:hover > ul{
+    display:  block;
+}
+/*Hiển thị menu con cấp 2,3,4 bên cạnh phải*/
+#menu > ul li > ul li >ul{
+    margin-left: 352px;
+    margin-top: -50px;
+}
+/*-end-*/
+
+/* #content*/
+#content{
+	border-radius: 5px;
+	background-color: #ffffff;
+	width: 50%;
+	height: 40%;
+	margin-left: 25%;
+	margin-top: 2%;
+}
+#content h1{
+	text-align: center;
+	padding-top: 3%;
+}
+#main-content .article{
+	margin: 20px 0;
+}
+#main-content .article label{
+	width: 22%;
+	float: left;
+	margin-left: 18%;
+}
+#main-content .article input[type="text"]{
+	width: 350px;
+	height: 40px;
+	border-radius: 10px;
+}
+#main-content .article input[type="button"]{
+	margin-left: 40%;
+	margin-bottom: 3%;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 18px;
+	padding: 1%;
+	background-color:  #29B6F6;
+}
+
+/* #footer */
+#footer{
+	background: rgb(237,177,203);
+	background: radial-gradient(circle, rgba(237,177,203,1) 0%, rgba(150,107,148,1) 28%, rgba(33,183,218,1) 71%, rgba(148,187,233,1) 100%);
+	margin-top: 6%;
+}
+#footer .row{
+	display: flex;
+	margin-left: 5%;
+	padding-top: 1%;
+}
+#footer .col-footer{
+	margin-left: 155px;
+}
+#footer .col-footer h1{
+	font-family: 'Cursive', Garamond;
+	font-size: 45px;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+#footer .icon-footer{
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+#footer .icon-footer img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 20px;
+}
+#footer .icon-footer strong{
+	margin-left: 15px;
+	width: 100px;
+	font-weight: bolder;
+}
+#footer .icon-footer a{
+	color: black;
+}
+#footer .menu-footer{
+	column-count: 2;
+	column-gap: 35px;
+}
+#footer .menu-footer a{
+	font-size: 16px;
+	color: black;
+}
+#footer .title-footer img{
+	margin-left: 20px;
+}
+
+/* #copyright*/
+#copyright{
+	margin-top: 12px;
+	padding-bottom: 5px;
+}
+#copyright p{
+	text-align: center;
+}

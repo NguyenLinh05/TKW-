@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=	"viewport" content="width=device-width, initial-scale=1.0">
+	<title>Giới thiệu và bán các mặt hàng sữa</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="
+	style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<style type="text/css">
+		.myslides{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!--Begin #nav-->
+	<div id="nav">
+		<div class="container">
+			<div class="main_nav">
+				<div class="logo">
+					<a href="index.html">Dairy Shop</a>
+				</div>
+				<div class="search">
+					<input type="text" name="timkiem" placeholder="  Tìm kiếm">
+					<div class="icon">
+						<a href=""><img src="images\search.png" alt=""></a>
+					</div>
+				</div>
+				<div class="login">
+					<a href="dangnhap.html"><input type="button" value="Đăng nhập" herf="dangnhap.html"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End #nav-->
+	<!--Begin #header-->
+	<div id="header">
+		<div class="container">
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Trang chủ</a></li>
+					<li><a href="gioithieu.html">Giới thiệu</a></li>
+					<li><a href="">Các loại sữa</a>
+						<ul>
+							<li><a href="suatuoi.html">Sữa tươi</a></li>
+							<li><a href="suadaunanh.html">Sữa đậu nành, sữa từ hạt</a></li>
+							<li><a href="suadac.html">Sữa đặc</a></li>
+							<li><a href="suachua.html">Sữa chua, phô mai</a></li>
+							<li><a href="cacao.html">Sữa ca cao, lúa mạch</a></li>
+							<li><a href="yenmach.html">Yến mạch, ngũ cốc</a></li>
+							<li><a href="suabot.html">Sữa bột, sữa bột pha sẵn</a></li>
+						</ul>
+					</li>
+					<li><a href="giohang.html">Giỏ hàng</a></li>
+					<li><a href="lienhe.html">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--End #header-->
+
+	<!--Begin #slider-->
+	<div id="slider">
+		<div class="w3-content" style="max-width: 100%">
+			<img class="mySlides" src="images\slide3.jpg">
+			<img class="mySlides" src="images\slide5.jpg">
+			<img class="mySlides" src="images\slide6.jpg">
+			<img class="mySlides" src="images\slide7.jpg">
+			<img class="mySlides" src="images\slide13.jpg">
+			<img class="mySlides" src="images\slide10.jpg">
+			<img class="mySlides" src="images\slide11.jpg">
+		</div>
+		<script>
+			var sliderIndex = 0;
+			carousel();
+
+			function carousel(){
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++){
+					x[i].style.display = "none";
+				}
+				sliderIndex++;
+				if (sliderIndex > x.length){
+					sliderIndex = 1
+				}
+				x[sliderIndex-1].style.display = "block";
+				setTimeout(carousel, 2000);
+			}
+		</script>
+	</div>
+	<!--End #slider-->
+	<!--Begin #content-->
+	<div id="content">
+		<div class="container">
+			<!--Begin #main-content1-->
+			<!--Sữa tươi-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Sữa tươi</a>
+				</div>
+				<div class="section">
+					<img src="images\suatuoi10.png" alt="">
+					<p>Sữa tươi nguyên kem không đường Australia's Own hộp 1 lít </p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>32.000đ</h4>
+					<div class="button"><a href="suatuoi.html">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\suatuoi10.1.jpg" alt="">
+					<p>Lốc 4 hộp sữa tươi tiệt trùng Dutch Lady 180ml</p>
+					<h3>HSD còn 42 ngày</h3>
+					<h4>29.500đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\suatuoi10.2.jpg" alt="">
+					<p>Sữa tươi nguyên kem không đường Inex hộp 1 lít </p>
+					<h3>HSD còn 5 tháng</h3>
+					<h4>37.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\suatuoi5.0.jpg" alt="">
+					<p>Sữa tươi Vinamilk 100% Sữa Tươi ít đường hộp 1 lít </p>
+					<h3>HSD còn 4 tháng</h3>
+					<h4>31.500đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\suatuoi3.0.jpg" alt="">
+					<p>Thùng 48 bịch sữa dinh dưỡng Vinamilk A&D3 220ml</p>
+					<h3>HSD còn 4 tháng</h3>
+					<h4>298.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+			<!--Begin #main-content-->
+			<!--Sữa đậu nành-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Sữa đâu nành- Sữa từ hạt</a>
+				</div>
+				<div class="section">
+					<img src="images\daunanh1.0.jpg" alt="">
+					<p>6 hộp sữa đậu nành nguyên chất ít đường Fami 200ml</p>
+					<h3>HSD còn 3 tháng</h3>
+					<h4>24.500đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\daunanh2.0.jpg" alt="">
+					<p>Sữa đậu đen óc chó hạnh nhân Sahmyook 195ml </p>
+					<h3>HSD còn 4 tháng</h3>
+					<h4>17.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\daunanh3.0.jpg" alt="">
+					<p>20 bịch sữa hạnh nhân và óc có Vegemil 190ml</p>
+					<h3>HSD còn 6 tháng</h3>
+					<h4>315.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\daunanh4.0.jpg" alt="">
+					<p>Thùng 16 hộp sữa đậu nhành đậu đen óc chó hạnh nhân Yaho 190ml</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>219.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\daunanh5.0.jpg" alt="">
+					<p>36 hộp sữa đậu nành nguyên chất Vinasoy 200ml </p>
+					<h3>HSD còn 4 tháng</h3>
+					<h4>165.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+			<!--Begin #main-content-->
+			<!--Sữa đặc-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Sữa đặc</a>
+				</div>
+				<div class="section">
+					<img src="images\dac1.0.jpg" alt="">
+					<p>Sữa đặc có đường Ông Thọ trắng nhãn vàng 380g</p>
+					<h3>HSD còn 10 tháng</h3>
+					<h4>29.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\dac2.0.jpg" alt="">
+					<p>Creamer dừa béo đặc Delita Coco 300g</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>25.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\dac3.0.jpg" alt="">
+					<p>Kem đặc có đường Ngôi sao Phương Nam xanh biển 380g </p>
+					<h3>HSD còn 9 tháng</h3>
+					<h4>18.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\dac4.0.jpg" alt="">
+					<p>Kem đặc có đường Hoan Hảo 380g </p>
+					<h3>HSD còn 3 tháng</h3>
+					<h4>17.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\dac5.0.jpg" alt="">
+					<p>Kem đặc có đường Nuti 380g</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>17.700đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+			<!--Begin #main-content-->
+			<!--Sữa chua-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Sữa chua, phô mai</a>
+				</div>
+				<div class="section">
+					<img src="images\sc1.0.jpg" alt="">
+					<p>Lốc 4 hộp sữa chua hạt óc chó Vinamilk 100g x 4 hũ</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>36.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sc2.0.jpg" alt="">
+					<p>Lốc 4 hộp sữa chua có đường Vinamilk từ 100% sữa tươi 100g x 4 hũ</p>
+					<h3>HSD còn 36 ngày</h3>
+					<h4>25.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sc3.0.jpg" alt="">
+					<p>Thùng 48 hộp sữa chua uống hương cam TH True Yogurt Top Kid</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>228.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sc4.0.jpg" alt="">
+					<p>Thùng 30 gói sữa chua uống tổ yến Nestlé Yogu 85ml</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>25.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sc5.0.jpg" alt="">
+					<p>Thùng 24 túi sữ chua uống hương kem dâu LiF Kun</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>105.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+			<!--Begin #main-content-->
+			<!--Sữa ca cao-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Sữa ca cao, lúa mạch</a>
+				</div>
+				<div class="section">
+					<img src="images\cc1.0.jpg" alt="">
+				    <p>Lốc 4 hộp ca cao nguyên chất Vita Dairy 180ml</p>
+				    <h3>HSD còn 7 tháng</h3>
+				    <h4>34.000đ</h4>
+				    <div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\cc2.0.jpg" alt="">
+				    <p>Lốc 4 hộp thức uống lúa mạch hương vị socola Ovaltine 180ml</p>
+				    <h3>HSD còn 4 tháng</h3>
+				    <h4>27.000đ</h4>
+				    <div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\cc3.0.jpg" alt="">
+				    <p>Lốc 4 hộp thức uống lúa mạch Milo Axtive Go 180ml</p>
+				    <h3>HSD còn 7 tháng</h3>
+				    <h4>27.000đ</h4>
+				<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\cc4.0.jpg" alt="">
+				    <p>Bột cacao nguyên chất CacaoMi Premium hộp 127g</p>
+				    <h3>HSD còn 1 năm</h3>
+				    <h4>57.000đ</h4>
+				    <div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\cc5.0.jpg" alt="">
+				    <p>Lốc 4 hộp thức uống dinh dưỡng socola lúa mạch LiF Kun 180ml</p>
+				    <h3>HSD còn 7 tháng</h3>
+				    <h4>25.000đ</h4>
+				    <div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+			<!--Begin #main-content-->
+			<!--Yến mạch-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Yến mạch, ngũ cốc</a>
+				</div>
+				<div class="section">
+					<img src="images\ym1.0.jpg" alt="">
+				    <p>Thực phẩm bổ sung yến mạch Yumfood Gạo lứt 210g</p>
+				    <h3>HSD còn 9 tháng</h3>
+				    <h4>29.000</h4>
+			    	<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\ym2.0.jpg" alt="">
+				    <p>Bột uống hỗn hợp Nokchawon 270g</p>
+				    <h3>HSD còn 7 tháng</h3>
+				    <h4>125.000</h4>
+				    <div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\ym3.0.jpg" alt="">
+					<p>Ngũ cốc dinh dưỡng Nesvita 400</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>52.000</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\ym4.0.jpg" alt="">
+					<p>Bột đậu xanh hạt sen Bích Chi bịch 350g</p>
+					<h3>HSD còn 7 thán</h3>
+					<h4>25.000</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\ym5.0.jpg" alt="">
+					<p>Ngũ cốc dinh dưỡng VinaCafé B'fast bịch 500g</p>
+					<h3>HSD còn 7 tháng</h3>
+					<h4>25.000</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+			<!--Begin #main-contetn-->
+			<!--Sữa bột-->
+			<div id="main-content">
+				<div class="tieude">
+					<a href="">||Sữa bột- Sữa bột pha sẵn</a>
+				</div>
+				<div class="section">
+					<img src="images\sb1.0.jpg" alt="">
+					<p>Thùng 24 chai sữa pha sẵn NutiFood EnPlus Diamond 237ml</p>
+					<h3>HSD còn 1 năm</h3>
+					<h4>760.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sb2.0.jpg" alt="">
+					<p>Sữa bột Abbott Grow 6+ vani</p>
+					<h3>HSD còn 1 năm</h3>
+					<h4>377.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sb3.0.jpg" alt="">
+					<p>Lốc 4 hộp sữa bột pha sẵn Abbott Grow Gold vani 180ml</p>
+					<h3>HSD còn 13 tháng</h3>
+					<h4>57.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sb4.0.jpg" alt="">
+					<p>Sữa bột Abbott Similac Newborn Eye-Q Plus HMO 900g</p>
+					<h3>HSD còn 1 năm</h3>
+					<h4>546.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+				<div class="section">
+					<img src="images\sb5.0.jpg" alt="">
+					<p>Sữa bột Friso Gold 4 vani 1.5g</p>
+					<h3>HSD còn 1 năm</h3>
+					<h4>720.000đ</h4>
+					<div class="button"><a href="">Mua hàng</a></div>
+				</div>
+			</div>
+			<!--End #main-content-->
+		</div>
+	</div>
+	<!--End #content-->
+	<!--Begin #footer-->
+	<div id="footer">
+		<div class="row">
+			<div class="col-footer">
+				<h1>Dairy Shop</h1>
+				<div class="icon-footer">
+					<img src="images\map.png" alt="">
+					<strong> Địa chỉ: </strong>
+					<a href="https://www.google.com/maps/dir//Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+%C4%90%E1%BA%A1i+Nam,+S%E1%BB%91+1+Ph%C3%B4%CC%81+X%C3%B4%CC%81m,+Ph%C3%BA+L%C3%A2m,+H%C3%A0+%C4%90%C3%B4ng,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9473139,105.7565695,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x313452eaa9c461c3:0x2a3e1c421f299adc!2m2!1d105.7587582!2d20.9473089?hl=vi-VN"> Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội</a>
+				</div>
+				<div class="icon-footer">
+					<img src="images\phone.png" alt="">
+					<strong>Điện thoại: </strong>
+					<a href="tel:02435577799 "> (024) 35577799 </a>
+				</div>
+				<div class="icon-footer">
+					<img src="images\phone1.png" alt="">
+					<strong>Hotline:</strong> 
+					<a href="tel: 0384769303"> 0384769303</a>
+				</div>
+				<div class="icon-footer">
+					<img src="images\mail.png" alt="">
+					<strong>Email: </strong>
+					<a href="mailto: nguyenlinh2505112002.vn">nguyenlinh2505112002@gmail.com</a>
+				</div>
+			</div>
+			<div class="col-footer">
+				<h1>Liên kết nhanh</h1>
+				<div class="menu-footer">
+					<ul>
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="">Giới thiệu</a></li>
+						<li><a href="suatuoi.html">Sữa tươi</a></li>
+						<li><a href="suadaunanh.html">Sữa đậu nành, sữa từ hạt</a></li>
+						<li><a href="suadac.html">Sữa đặc</a></li>
+						<li><a href="suachua.html">Sữa chua, phô mai</a></li>
+						<li><a href="cacao.html">Ca cao, lúa mạch</a></li>
+						<li><a href="yenmach.html">Yến mạch, ngũ cốc</a></li>
+						<li><a href="suabot.html">Sữa bột, sữa bột pha sẵn</a></li>
+						<li><a href="giohang.html">Giỏ hàng</a></li>
+						<li><a href="lienhe.html">Liên hệ</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-footer">
+				<h1>Mạng xã hội</h1>
+				<div class="title-footer">
+					<img src="images\face.png" alt="">
+					<img src="images\zalo.png" alt="">
+					<img src="images\ins.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- Begin #copyright-->
+		<div id="copyright">
+			<p>& Copyright 2021. Chịu trách nhiệm nội dung Nguyễn Thị Linh</p>
+		</div>
+		<!-- End #copyright-->
+	</div>
+	<!--End #footer-->
+</body>
+</html>
